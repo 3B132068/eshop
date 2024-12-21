@@ -38,6 +38,7 @@ products.destroy:   DELETE          products/{product}                  ProductC
 */
 
 Route::resource('cart_items', CartItemController::class);
+Route::resource('orders', OrderController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
